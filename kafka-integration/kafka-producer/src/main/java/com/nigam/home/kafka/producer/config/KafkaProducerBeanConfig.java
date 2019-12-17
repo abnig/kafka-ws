@@ -31,8 +31,8 @@ public class KafkaProducerBeanConfig {
 	
 	@Bean
 	public KafkaProducer<String, String> logEventProducer(Properties producerProperties) {
-		KafkaProducer<String, String> producer = new KafkaProducer<String, String>(producerProperties);
-		return producer;
+		KafkaProducer<String, String> logEventProducer = new KafkaProducer<String, String>(producerProperties);
+		return logEventProducer;
 	}
 
 }
